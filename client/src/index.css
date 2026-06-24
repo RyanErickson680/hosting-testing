@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* MCUF Global Styles — "The Living Archive" */
+@layer base {
+  body {
+    background-color: #f6faf7;
+    color: #181d1b;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .bg-section {
+    background-color: #f1f5f2;
+  }
+
+  .text-primary-green {
+    color: #1b5e20;
+  }
+
+  .text-mint {
+    color: #acf4a4;
+  }
+
+  .text-gold {
+    color: #503600;
+  }
+
+  .bg-primary-green {
+    background-color: #1b5e20;
+  }
+
+  .bg-mint {
+    background-color: #acf4a4;
+  }
+
+  .bg-gold {
+    background-color: #503600;
+  }
+
+  /* Progress bars — always rounded caps */
+  .progress-bar {
+    border-radius: 9999px;
+  }
+}
