@@ -5,8 +5,9 @@
   "main": "./src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec ./node_modules/.bin/babel-node ./src/server.js",
+    "start": "node ./build/server.js",
     "build": "babel -d ./build ./src -s",
+    "dev": "nodemon --exec ./node_modules/.bin/babel-node ./src/server.js",
     "lint": "eslint .",
     "reconcile-subscription": "babel-node scripts/reconcile-subscription-donations.js",
     "diagnose-paypal-subs": "babel-node scripts/diagnose-paypal-subscriptions.js",
